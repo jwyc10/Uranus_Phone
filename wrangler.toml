@@ -43,3 +43,13 @@ new_sqlite_classes = ["Uranus"]
 # Worker 本身永远是 UTC，这里改成你自己的，比如 America/Los_Angeles
 [vars]
 TZ = "Asia/Shanghai"
+name = "uranus-phone"
+compatibility_date = "2024-01-01"
+
+[[durable_objects.bindings]]
+name = "Uranus"
+class_name = "Uranus"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["Uranus"]
